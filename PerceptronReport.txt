@@ -1,0 +1,59 @@
+Assignment 2 Report
+
+Name: Suresh Kasipandy
+
+Part I.
+
+1. Performance of standard perceptron on the development data with 100% of the training data
+1a. spam precision: 0.985558583106267
+1b. spam recall: 0.9844855743059336
+1c. spam F1 score: 0.9850217864923746
+1d. ham precision: 0.9621010638297872
+1e. ham recall: 0.9646666666666667
+1f. ham F1 score: 0.9633821571238349
+
+2. Performance of averaged perceptron on the development data with 100% of the training data
+2a. spam precision: 0.9849726775956285
+2b. spam recall: 0.9812193794229722
+2c. spam F1 score: 0.9830924461412599
+2d. ham precision: 0.9544253632760898
+2e. ham recall: 0.9633333333333334
+2f. ham F1 score: 0.9588586595885866
+
+Part II.
+
+3. Performance of standard perceptron on the development data with 10% of the training data
+3a. spam precision: 0.9685124864277959
+3b. spam recall: 0.9711486118671747
+3c. spam F1 score: 0.9698287578146235
+3d. ham precision: 0.9288590604026845
+3e. ham recall: 0.9226666666666666
+3f. ham F1 score: 0.925752508361204
+
+4. Performance of averaged perceptron on the development data with 10% of the training data
+4a. spam precision: 0.9712957900492072
+4b. spam recall: 0.9670658682634731
+4c. spam F1 score: 0.9691762138570649
+4d. ham precision: 0.9201846965699209
+4e. ham recall: 0.93
+4f. ham F1 score: 0.9250663129973474
+
+Part III. You are welcome to reuse code you wrote for assignment 1,
+but we would like to know how you handled the following tasks.
+
+5. How did you calculate precision, recall and F1 score? If you used a
+separate script, please give the name of the script and describe how
+to run it.
+A. In per_classify.py there are multiple lines of code that have been commented. These lines 
+(lines 37-48, 55, 78-86, 90-98, 100-117) calculate and print precision, recall and F1 score.
+All calculations were manually done, summing false positives, false negatives, true positives 
+and true negatives after which the appropriate formulae were used.
+
+6. How did you separate 10% of the training data? If you used a
+separate script, please give the name of the script and describe how
+to run it. Explain how you or your code choose the files.
+A. I'd stored all the training data in a dictionary as their iteration is random and seemed 
+suitable given the nature of the assigment. To select ten percent of the training data, I 
+iterated through the dictionary and copied 5% of the spam files and 5% of the ham files 
+from the training dictionary. These lines(82-101 in per_learn.py and 91-109 in avg_per_learn.py) 
+have been commented out.
